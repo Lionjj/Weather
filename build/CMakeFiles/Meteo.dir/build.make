@@ -95,6 +95,8 @@ Meteo_EXTERNAL_OBJECTS =
 
 Meteo: CMakeFiles/Meteo.dir/src/main.cpp.o
 Meteo: CMakeFiles/Meteo.dir/build.make
+Meteo: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
+Meteo: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 Meteo: CMakeFiles/Meteo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Meteo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Meteo.dir/link.txt --verbose=$(VERBOSE)

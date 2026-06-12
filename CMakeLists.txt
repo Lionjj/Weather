@@ -5,15 +5,16 @@ project(Meteo VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+if(APPLE)
+    list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew")
+endif()
+
+find_package(CURL REQUIRED)
+find_package(nlohmann_json REQUIRED)
+
 add_executable(Meteo src/main.cpp)
 
-execute_process(
-    COMMAND xcrun --show-sdk-path
-    OUTPUT_VARIABLE MAC_SDK_PATH
-    OUTPUT_STRIP_TRAILING_WHITESPACE
+target_link_libraries(Meteo PRIVATE
+    CURL::libcurl
+    nlohmann_json::nlohmann_json
 )
-
-target_include_directories(Meteo PRIVATE "${MAC_SDK_PATH}/usr/include")
-
-target_link_options(Meteo PRIVATE "-isysroot" "${MAC_SDK_PATH}")
-target_link_libraries(Meteo PRIVATE "curl")
