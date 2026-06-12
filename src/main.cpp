@@ -17,6 +17,37 @@ size_t write_call_back(void* contents, size_t size, size_t nmemb, std::string* u
     return total_size;
 }
 
+void pritn_weather(const json& response)
+{
+    if(response.empty())
+    {
+      std::cerr << "Response is empty!" << std::endl;
+      return;  
+    } 
+
+    if(response.contains("cod") && response["cod"] >= 400)
+    {
+        std::cerr << "error: respons code: " << response["cod"] << '.' << std::endl; 
+    }
+
+    float temp = response["main"]["temp"];
+    float feels_like = response["main"]["feels_like"];
+    int humidity = response["main"]["humidity"];
+
+    string description = response["weather"][0]["description"];
+    
+    string city = response["name"];
+    string country = response["sys"]["country"];
+
+    std::cout << "\n ======================================================" << std::endl;
+    std::cout << '\t' + city + '(' + country + ')' + " weather forecast: " + description << std::endl;
+    std::cout << "\n ======================================================" << std::endl;
+    std::cout << "\tTemperature: " << temp << "°C (Feels like: " << feels_like << " °C)" << std::endl;
+    std::cout << "\tHumidity: " << humidity << std::endl;
+    std::cout << "\n ======================================================" << std::endl;
+
+}
+
 json call_api_weather(string city) 
 {
     json JSONResult = json::object();
@@ -61,6 +92,7 @@ int main()
     // 2. Get the input from the user
     // 3. Call the API based on the current request
     json server_response = call_api_weather("Milano");
+    pritn_weather(server_response);
     // 4. Display the result.
     return 0;
 }
