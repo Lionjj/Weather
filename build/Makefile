@@ -153,6 +153,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/weatherAPI.o: src/weatherAPI.cpp.o
+.PHONY : src/weatherAPI.o
+
+# target to build an object file
+src/weatherAPI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.o
+.PHONY : src/weatherAPI.cpp.o
+
+src/weatherAPI.i: src/weatherAPI.cpp.i
+.PHONY : src/weatherAPI.i
+
+# target to preprocess a source file
+src/weatherAPI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.i
+.PHONY : src/weatherAPI.cpp.i
+
+src/weatherAPI.s: src/weatherAPI.cpp.s
+.PHONY : src/weatherAPI.s
+
+# target to generate assembly for a file
+src/weatherAPI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.s
+.PHONY : src/weatherAPI.cpp.s
+
+src/weatherUI.o: src/weatherUI.cpp.o
+.PHONY : src/weatherUI.o
+
+# target to build an object file
+src/weatherUI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.o
+.PHONY : src/weatherUI.cpp.o
+
+src/weatherUI.i: src/weatherUI.cpp.i
+.PHONY : src/weatherUI.i
+
+# target to preprocess a source file
+src/weatherUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.i
+.PHONY : src/weatherUI.cpp.i
+
+src/weatherUI.s: src/weatherUI.cpp.s
+.PHONY : src/weatherUI.s
+
+# target to generate assembly for a file
+src/weatherUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.s
+.PHONY : src/weatherUI.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +213,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/weatherAPI.o"
+	@echo "... src/weatherAPI.i"
+	@echo "... src/weatherAPI.s"
+	@echo "... src/weatherUI.o"
+	@echo "... src/weatherUI.i"
+	@echo "... src/weatherUI.s"
 .PHONY : help
 
 

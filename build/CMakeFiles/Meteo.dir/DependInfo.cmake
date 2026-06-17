@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/dany/Projects/Portfolio/CPP/Meteo/src/main.cpp" "CMakeFiles/Meteo.dir/src/main.cpp.o" "gcc" "CMakeFiles/Meteo.dir/src/main.cpp.o.d"
+  "/Users/dany/Projects/Portfolio/CPP/Meteo/src/weatherAPI.cpp" "CMakeFiles/Meteo.dir/src/weatherAPI.cpp.o" "gcc" "CMakeFiles/Meteo.dir/src/weatherAPI.cpp.o.d"
+  "/Users/dany/Projects/Portfolio/CPP/Meteo/src/weatherUI.cpp" "CMakeFiles/Meteo.dir/src/weatherUI.cpp.o" "gcc" "CMakeFiles/Meteo.dir/src/weatherUI.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
