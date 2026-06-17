@@ -114,9 +114,3 @@ In recent refactoring sessions (git log --oneline), two critical stability issue
 2. Polluted Input Buffer (\n) (Fixed): Resolved unpredictable UI behaviors caused by trailing newline characters left in the input stream. Integrating cin.ignore(numeric_limits<streamsize>::max(), '\n') directly after numeric reads now ensures total stability for subsequent std::getline prompts.
 
 More bug can be found during the usage, if this occurse let me know!
-
----
-
-## 📄 License
-
-This project is for educational and private use. The underlying API endpoints and authentication keys provided inside config.hpp are subject to the terms of service, rate limits, and usage policies defined by OpenWeatherMap.
