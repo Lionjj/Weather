@@ -17,9 +17,16 @@ The application robustly resolves city name ambiguity (e.g., searching for a cit
 
 ---
 
-## ⚙️ Configuration (`config.hpp`)
+## ⚙️ Configuration (`config.hpp`) & API Key
 
-Global parameters and network endpoints are centralized inside the `Config` namespace within the `config.hpp` file:
+This application requires an API key from OpenWeatherMap to fetch weather data. To protect sensitive credentials, the application reads the API key from your system's environment variables rather than hardcoding it into the source code.
+
+### 1. Get your API Key
+1. Go to [OpenWeatherMap](https://openweathermap.org/) and create a free account.
+2. Navigate to your dashboard and generate a new **API Key** (under the "My API Keys" tab).
+
+### 2. Set the Environment Variable
+Before running the application, you must set the environment variable named `API_KEY`.
 
 ```cpp
 #pragma once
@@ -27,7 +34,7 @@ Global parameters and network endpoints are centralized inside the `Config` name
 
 namespace Config
 {
-    inline constexpr const char* API_KEY = "0ef9ddfc862960e794be95bdc093587b";
+    inline constexpr const char* API_KEY = "";
     inline constexpr const char* WEATHER_PREFIX_URL = "[https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap.org/data/2.5/weather)?";
     inline constexpr const char* WEATHER_SUFFIX_URL = "&units=metric&lang=it";
 
