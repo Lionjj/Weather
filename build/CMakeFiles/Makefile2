@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/dany/Projects/Portfolio/CPP/Meteo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Meteo.dir/all
+all: CMakeFiles/Weather.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Meteo.dir/codegen
+codegen: CMakeFiles/Weather.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Meteo.dir/clean
+clean: CMakeFiles/Weather.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Meteo.dir
+# Target rules for target CMakeFiles/Weather.dir
 
 # All Build rule for target.
-CMakeFiles/Meteo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles --progress-num=1,2,3,4 "Built target Meteo"
-.PHONY : CMakeFiles/Meteo.dir/all
+CMakeFiles/Weather.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles --progress-num=1,2,3,4 "Built target Weather"
+.PHONY : CMakeFiles/Weather.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Meteo.dir/rule: cmake_check_build_system
+CMakeFiles/Weather.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Meteo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Weather.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles 0
-.PHONY : CMakeFiles/Meteo.dir/rule
+.PHONY : CMakeFiles/Weather.dir/rule
 
 # Convenience name for target.
-Meteo: CMakeFiles/Meteo.dir/rule
-.PHONY : Meteo
+Weather: CMakeFiles/Weather.dir/rule
+.PHONY : Weather
 
 # codegen rule for target.
-CMakeFiles/Meteo.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Meteo"
-.PHONY : CMakeFiles/Meteo.dir/codegen
+CMakeFiles/Weather.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dany/Projects/Portfolio/CPP/Meteo/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Weather"
+.PHONY : CMakeFiles/Weather.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Meteo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/clean
-.PHONY : CMakeFiles/Meteo.dir/clean
+CMakeFiles/Weather.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/clean
+.PHONY : CMakeFiles/Weather.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

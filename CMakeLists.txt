@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(Meteo VERSION 0.1 LANGUAGES CXX)
+project(Weather VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -14,9 +14,9 @@ file(GLOB SOURCES "src/*.cpp")
 find_package(CURL REQUIRED)
 find_package(nlohmann_json REQUIRED)
 
-add_executable(Meteo ${SOURCES})
+add_executable(Weather ${SOURCES})
 
-target_link_libraries(Meteo PRIVATE
+target_link_libraries(Weather PRIVATE
     CURL::libcurl
     nlohmann_json::nlohmann_json
 )

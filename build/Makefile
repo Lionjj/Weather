@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Meteo
+# Target rules for targets named Weather
 
 # Build rule for target.
-Meteo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Meteo
-.PHONY : Meteo
+Weather: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Weather
+.PHONY : Weather
 
 # fast build rule for target.
-Meteo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/build
-.PHONY : Meteo/fast
+Weather/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/build
+.PHONY : Weather/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +150,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/weatherAPI.o: src/weatherAPI.cpp.o
@@ -158,7 +158,7 @@ src/weatherAPI.o: src/weatherAPI.cpp.o
 
 # target to build an object file
 src/weatherAPI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherAPI.cpp.o
 .PHONY : src/weatherAPI.cpp.o
 
 src/weatherAPI.i: src/weatherAPI.cpp.i
@@ -166,7 +166,7 @@ src/weatherAPI.i: src/weatherAPI.cpp.i
 
 # target to preprocess a source file
 src/weatherAPI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherAPI.cpp.i
 .PHONY : src/weatherAPI.cpp.i
 
 src/weatherAPI.s: src/weatherAPI.cpp.s
@@ -174,7 +174,7 @@ src/weatherAPI.s: src/weatherAPI.cpp.s
 
 # target to generate assembly for a file
 src/weatherAPI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherAPI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherAPI.cpp.s
 .PHONY : src/weatherAPI.cpp.s
 
 src/weatherUI.o: src/weatherUI.cpp.o
@@ -182,7 +182,7 @@ src/weatherUI.o: src/weatherUI.cpp.o
 
 # target to build an object file
 src/weatherUI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherUI.cpp.o
 .PHONY : src/weatherUI.cpp.o
 
 src/weatherUI.i: src/weatherUI.cpp.i
@@ -190,7 +190,7 @@ src/weatherUI.i: src/weatherUI.cpp.i
 
 # target to preprocess a source file
 src/weatherUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherUI.cpp.i
 .PHONY : src/weatherUI.cpp.i
 
 src/weatherUI.s: src/weatherUI.cpp.s
@@ -198,7 +198,7 @@ src/weatherUI.s: src/weatherUI.cpp.s
 
 # target to generate assembly for a file
 src/weatherUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meteo.dir/build.make CMakeFiles/Meteo.dir/src/weatherUI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Weather.dir/build.make CMakeFiles/Weather.dir/src/weatherUI.cpp.s
 .PHONY : src/weatherUI.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Meteo"
+	@echo "... Weather"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
