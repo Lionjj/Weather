@@ -4,7 +4,7 @@
 
 namespace Config
 {
-    inline constexpr const char* API_KEY = "0ef9ddfc862960e794be95bdc093587b";
+    inline constexpr const char* API_KEY = "";
     inline constexpr const char* WEATHER_PREFIX_URL = "https://api.openweathermap.org/data/2.5/weather?";
     inline constexpr const char* WEATHER_SUFFIX_URL = "&units=metric&lang=it";
 
